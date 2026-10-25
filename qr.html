@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080c18">
+
+    <title>Hardik Optical & Rubber Stamp | Nagaur</title>
+
+    <meta name="description" content="Visit Hardik Optical & Rubber Stamp, Nagaur. Connect with us on WhatsApp, explore our website, find our shop and follow us on Instagram.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #080c18;
+            --card: #111a2e;
+            --blue: #245bdb;
+            --light-blue: #7db5ff;
+            --white: #ffffff;
+            --muted: #aab6cb;
+            --border: rgba(255,255,255,0.10);
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                radial-gradient(ellipse at top, #172c53 0%, transparent 48%),
+                var(--bg);
+            color: var(--white);
+            min-height: 100vh;
+            padding: 25px 16px;
+        }
+
+        .container {
+            max-width: 440px;
+            margin: auto;
+        }
+
+        .brand {
+            text-align: center;
+            padding: 24px 10px 28px;
+        }
+
+        .logo {
+            width: 86px;
+            height: 86px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background: linear-gradient(145deg, #2866ee, #102650);
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 12px 40px rgba(36,91,219,0.28);
+            font-size: 43px;
+        }
+
+        .eyebrow {
+            color: var(--light-blue);
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 27px;
+            line-height: 1.25;
+            letter-spacing: 1px;
+            font-weight: 800;
+        }
+
+        h1 span {
+            color: var(--light-blue);
+        }
+
+        .subtitle {
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .location {
+            margin-top: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            padding: 9px 15px;
+            border-radius: 30px;
+            font-size: 12px;
+            color: #dce6f8;
+        }
+
+        .section-title {
+            color: var(--muted);
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin: 15px 4px 14px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 16px;
+            text-decoration: none;
+            color: var(--white);
+            background: linear-gradient(
+                115deg,
+                rgba(22,35,60,0.96),
+                rgba(13,21,38,0.96)
+            );
+            border: 1px solid var(--border);
+            border-radius: 17px;
+            transition: transform 0.2s, border-color 0.2s,
+                        background 0.2s;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(125,181,255,0.7);
+            background: #172745;
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 14px;
+            background: rgba(66,120,231,0.15);
+            font-size: 24px;
+        }
+
+        .link-text {
+            flex: 1;
+        }
+
+        .link-text strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            letter-spacing: 0.3px;
+        }
+
+        .link-text small {
+            display: block;
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .arrow {
+            color: var(--light-blue);
+            font-size: 23px;
+        }
+
+        .whatsapp .icon {
+            background: rgba(37,211,102,0.12);
+        }
+
+        .instagram .icon {
+            background: rgba(225,48,108,0.12);
+        }
+
+        .reviews .icon {
+            background: rgba(255,193,7,0.12);
+        }
+
+        .website .icon {
+            background: rgba(67,132,255,0.16);
+        }
+
+        .maps .icon {
+            background: rgba(52,168,83,0.12);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 32px;
+            padding: 20px 10px 8px;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer strong {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .footer p {
+            color: var(--muted);
+            font-size: 11px;
+            margin-top: 9px;
+            line-height: 1.7;
+        }
+
+        .footer .made {
+            color: #7586a4;
+            font-size: 10px;
+            margin-top: 17px;
+        }
+
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 23px;
+            }
+
+            .link-card {
+                padding: 13px;
+            }
+
+            .icon {
+                width: 43px;
+                height: 43px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="brand">
+
+            <div class="logo" aria-hidden="true">👓</div>
+
+            <div class="eyebrow">WELCOME TO</div>
+
+            <h1>
+                HARDIK OPTICAL<br>
+                <span>& RUBBER STAMP</span>
+            </h1>
+
+            <p class="subtitle">
+                Your Trusted Local Business
+            </p>
+
+            <div class="location">
+                <span>📍</span>
+                <span>Nagaur, Rajasthan, India</span>
+            </div>
+
+        </header>
+
+        <section aria-label="Business links">
+
+            <h2 class="section-title">CONNECT WITH US</h2>
+
+            <div class="links">
+
+                <!-- Existing Business Website -->
+                <a
+                    class="link-card website"
+                    href="https://gits-bhavya.github.io/hardik/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span class="icon">🌐</span>
+
+                    <span class="link-text">
+                        <strong>VISIT OUR WEBSITE</strong>
+                        <small>Explore our official website</small>
+                    </span>
+
+                    <span class="arrow">›</span>
+                </a>
+
+                <!-- WhatsApp -->
+                <a
+                    class="link-card whatsapp"
+                    href="https://wa.me/919414548423"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span class="icon">💬</span>
+
+                    <span class="link-text">
+                        <strong>WHATSAPP US</strong>
+                        <small>Chat with us directly</small>
+                    </span>
+
+                    <span class="arrow">›</span>
+                </a>
+
+                <!-- Google Maps -->
+                <a
+                    class="link-card maps"
+                    href="https://maps.app.goo.gl/RrD8GoL8ypqRq5Tz6"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span class="icon">📍</span>
+
+                    <span class="link-text">
+                        <strong>GET DIRECTIONS</strong>
+                        <small>Find our shop on Google Maps</small>
+                    </span>
+
+                    <span class="arrow">›</span>
+                </a>
+
+                <!-- Instagram -->
+                <a
+                    class="link-card instagram"
+                    href="https://www.instagram.com/hardik.optical/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span class="icon">📸</span>
+
+                    <span class="link-text">
+                        <strong>FOLLOW US ON INSTAGRAM</strong>
+                        <small>Explore our latest updates</small>
+                    </span>
+
+                    <span class="arrow">›</span>
+                </a>
+
+                <!-- Google Reviews: replace with direct review link later -->
+                <a
+                    class="link-card reviews"
+                    href="https://maps.app.goo.gl/RrD8GoL8ypqRq5Tz6"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span class="icon">⭐</span>
+
+                    <span class="link-text">
+                        <strong>RATE US ON GOOGLE</strong>
+                        <small>Visit our Google Maps listing</small>
+                    </span>
+
+                    <span class="arrow">›</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+
+            <strong>HARDIK OPTICAL & RUBBER STAMP</strong>
+
+            <p>
+                Thank you for visiting us.<br>
+                We look forward to serving you!
+            </p>
+
+            <p class="made">
+                NAGAUR, RAJASTHAN
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
